@@ -3,7 +3,7 @@
  * Manages application language state (English/Arabic)
  */
 
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import { translations } from '../utils/translations';
 
 type Language = 'en' | 'ar';
@@ -11,7 +11,7 @@ type Language = 'en' | 'ar';
 interface LanguageContextType {
     language: Language;
     setLanguage: (lang: Language) => void;
-    t: (key: string) => string;
+    t: (key: string) => any;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -32,7 +32,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         setLanguageState(lang);
     };
 
-    const t = (key: string): string => {
+    const t = (key: string): any => {
         const keys = key.split('.');
         let value: any = translations[language];
         for (const k of keys) {

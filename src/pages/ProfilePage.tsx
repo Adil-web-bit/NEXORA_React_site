@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
 import { AnimatedPage } from '../components/animated';
 import { Input, Button } from '../components/forms';
-import { heroHeading, staggerContainerOnScroll, staggerItemOnScroll } from '../utils/animations';
+import { heroHeading } from '../utils/animations';
 
 export const ProfilePage = () => {
     const { theme } = useTheme();

@@ -73,7 +73,7 @@ export const PricingPage = () => {
                             alignItems: 'stretch',
                         }}
                     >
-                        {plans.map((plan, index) => (
+                        {plans.map((plan: any, index: any) => (
                             <motion.div
                                 key={index}
                                 variants={staggerItemOnScroll}
@@ -144,7 +144,7 @@ export const PricingPage = () => {
                                     margin: 0,
                                     marginBottom: theme.spacing[8],
                                 }}>
-                                    {plan.features.map((feature, featureIndex) => (
+                                    {plan.features.map((feature: any, featureIndex: any) => (
                                         <li
                                             key={featureIndex}
                                             style={{

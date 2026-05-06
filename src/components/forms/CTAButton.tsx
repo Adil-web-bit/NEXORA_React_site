@@ -42,69 +42,122 @@ export const CTAButton: React.FC<CTAButtonProps> = ({
         onClick?.();
     };
 
-    const Element = href ? 'a' : 'button';
-
     return (
         <motion.div
             whileHover={{ scale: 1.05, y: -4 }}
             whileTap={{ scale: 0.95 }}
             style={{ display: 'inline-block' }}
         >
-            <Element
-                as={Element as any}
-                href={href}
-                onClick={handleClick}
-                style={{
-                    position: 'relative',
-                    overflow: 'hidden',
-                    ...style,
-                }}
-                className={className}
-            >
-                {/* Shimmer effect */}
-                <motion.div
-                    variants={shimmerVariants}
-                    animate="animate"
+            {href ? (
+                <a
+                    href={href}
+                    onClick={handleClick}
                     style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        background: isPrimary
-                            ? 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)'
-                            : 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%)',
-                        backgroundSize: '200% center',
-                        pointerEvents: 'none',
+                        position: 'relative',
+                        overflow: 'hidden',
+                        ...style,
                     }}
-                />
-
-                {/* Ripples */}
-                {ripples.map((ripple, index) => (
+                    className={className}
+                >
+                    {/* Shimmer effect */}
                     <motion.div
-                        key={index}
-                        variants={rippleVariants}
-                        initial="initial"
+                        variants={shimmerVariants}
                         animate="animate"
                         style={{
                             position: 'absolute',
-                            top: ripple.y,
-                            left: ripple.x,
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '50%',
-                            backgroundColor: 'rgba(255, 255, 255, 0.6)',
-                            transform: 'translate(-50%, -50%)',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            background: isPrimary
+                                ? 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)'
+                                : 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%)',
+                            backgroundSize: '200% center',
                             pointerEvents: 'none',
                         }}
                     />
-                ))}
 
-                {/* Button content */}
-                <span style={{ position: 'relative', zIndex: 1, display: 'inline-block' }}>
-                    {children}
-                </span>
-            </Element>
+                    {/* Ripples */}
+                    {ripples.map((ripple, index) => (
+                        <motion.div
+                            key={index}
+                            variants={rippleVariants}
+                            initial="initial"
+                            animate="animate"
+                            style={{
+                                position: 'absolute',
+                                top: ripple.y,
+                                left: ripple.x,
+                                width: '20px',
+                                height: '20px',
+                                borderRadius: '50%',
+                                backgroundColor: 'rgba(255, 255, 255, 0.6)',
+                                transform: 'translate(-50%, -50%)',
+                                pointerEvents: 'none',
+                            }}
+                        />
+                    ))}
+
+                    {/* Button content */}
+                    <span style={{ position: 'relative', zIndex: 1, display: 'inline-block' }}>
+                        {children}
+                    </span>
+                </a>
+            ) : (
+                <button
+                    onClick={handleClick}
+                    style={{
+                        position: 'relative',
+                        overflow: 'hidden',
+                        ...style,
+                    }}
+                    className={className}
+                >
+                    {/* Shimmer effect */}
+                    <motion.div
+                        variants={shimmerVariants}
+                        animate="animate"
+                        style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            background: isPrimary
+                                ? 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%)'
+                                : 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%)',
+                            backgroundSize: '200% center',
+                            pointerEvents: 'none',
+                        }}
+                    />
+
+                    {/* Ripples */}
+                    {ripples.map((ripple, index) => (
+                        <motion.div
+                            key={index}
+                            variants={rippleVariants}
+                            initial="initial"
+                            animate="animate"
+                            style={{
+                                position: 'absolute',
+                                top: ripple.y,
+                                left: ripple.x,
+                                width: '20px',
+                                height: '20px',
+                                borderRadius: '50%',
+                                backgroundColor: 'rgba(255, 255, 255, 0.6)',
+                                transform: 'translate(-50%, -50%)',
+                                pointerEvents: 'none',
+                            }}
+                        />
+                    ))}
+
+                    {/* Button content */}
+                    <span style={{ position: 'relative', zIndex: 1, display: 'inline-block' }}>
+                        {children}
+                    </span>
+                </button>
+            )}
         </motion.div>
     );
 };

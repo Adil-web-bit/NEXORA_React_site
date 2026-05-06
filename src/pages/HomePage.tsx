@@ -19,8 +19,6 @@ import {
     staggerItemOnScroll,
     buttonGlow,
     iconBounce,
-    hoverLift,
-    rippleVariants,
     shimmerVariants,
 } from '../utils/animations';
 
@@ -342,7 +340,7 @@ export const HomePage = () => {
                         viewport={{ once: true }}
                         variants={staggerContainerOnScroll}
                     >
-                        {features.map((feature, index) => (
+                        {features.map((feature: any, index: any) => (
                             <motion.div
                                 key={index}
                                 style={{
@@ -451,7 +449,7 @@ export const HomePage = () => {
                         viewport={{ once: true }}
                         variants={staggerContainerOnScroll}
                     >
-                        {steps.map((step, index) => (
+                        {steps.map((step: any, index: any) => (
                             <motion.div
                                 key={index}
                                 style={{

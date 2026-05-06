@@ -10,7 +10,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { AnimatedPage } from '../components/animated';
 import { Input, Checkbox } from '../components/forms';
-import { heroHeading, heroSubtitle, staggerContainerOnScroll, staggerItemOnScroll } from '../utils/animations';
+import { staggerContainerOnScroll } from '../utils/animations';
 
 export const SignupPage = () => {
     const { theme } = useTheme();

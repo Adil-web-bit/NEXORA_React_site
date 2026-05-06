@@ -71,7 +71,7 @@ export const FeaturesPage = () => {
                             gap: theme.spacing[8],
                         }}
                     >
-                        {features.map((feature, index) => (
+                        {features.map((feature: any, index: any) => (
                             <motion.div
                                 key={index}
                                 variants={staggerItemOnScroll}
