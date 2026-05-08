@@ -8,189 +8,150 @@ export const translations = {
         // Navigation
         nav: {
             home: 'Home',
-            features: 'Features',
+            problem: 'The Problem',
+            advantage: 'Our Advantage',
+            integration: 'Integration',
+            security: 'Security',
             pricing: 'Pricing',
-            login: 'Login',
-            getStarted: 'Get Started',
+            getStarted: 'Request Private Access',
         },
         // Home Page
         home: {
-            badge: '🎉 New: AI-powered insights now available',
-            headline: 'Transform Your Business with NEXORA',
-            subheading: 'The all-in-one platform that empowers teams to collaborate, automate workflows, and scale effortlessly. Join thousands of companies already transforming their operations.',
-            cta: 'Start Free Trial',
-            ctaDemo: 'Watch Demo',
-            ctaNote: '✓ No credit card required • ✓ 14-day free trial • ✓ Cancel anytime',
+            badge: '🔒 Invite-Only Model - Enterprise Excellence Guaranteed',
+            headline: 'Audit before you submit. Prevent before they reject.',
+            subheading: 'SAAEB is the smart tech shield protecting your medical facility\'s revenue cycle. We stop financial bleeding, block partial approvals, and perfectly align your claims with the most complex insurance rules. Operating strictly on an invite-only model to guarantee the highest service standards for our partners.',
+            cta: 'Request an Invitation',
+            ctaDemo: 'Learn More',
+            ctaNote: '✓ Enterprise-Grade Security • ✓ PDPL Compliant • ✓ 100% Saudi Data Sovereignty',
             
-            // Stats
-            stats: {
-                users: 'Active Users',
-                uptime: 'Uptime SLA',
-                countries: 'Countries',
-                rating: 'User Rating',
-            },
-            
-            // Features Section
-            featuresTitle: 'Everything You Need to Succeed',
-            featuresSubtitle: 'Powerful features designed to streamline your workflow and boost productivity',
+            // The Problem Section
+            problemTitle: 'The "Insurance" Trap & Financial Bleeding',
+            problemSubtitle: 'Understanding the challenges healthcare facilities face',
             
             features: [
                 {
-                    icon: '⚡',
-                    title: 'Lightning Fast Performance',
-                    description: 'Experience blazing-fast load times and seamless interactions powered by cutting-edge technology.',
+                    icon: '⏳',
+                    title: 'The Delay & Deferral Trap',
+                    description: 'Resubmitting claims multiple times delays your payments. Once the patient leaves the facility, the insurance company loses the incentive to expedite your money.',
                 },
                 {
-                    icon: '🔒',
-                    title: 'Enterprise-Grade Security',
-                    description: 'Bank-level encryption, SOC 2 compliance, and advanced security features to protect your data.',
+                    icon: '💸',
+                    title: 'The Partial Approval Squeeze',
+                    description: 'Insurance companies often approve claims partially, quietly swallowing your profit margins under the pretext of "unjustified services."',
                 },
                 {
-                    icon: '📊',
-                    title: 'Advanced Analytics',
-                    description: 'Make data-driven decisions with real-time insights and comprehensive reporting dashboards.',
-                },
-                {
-                    icon: '🔗',
-                    title: 'Seamless Integrations',
-                    description: 'Connect with 100+ tools and services through our extensive integration ecosystem.',
+                    icon: '🩸',
+                    title: 'The Silent Bleeding',
+                    description: 'Fear of rejection leads billing staff to under-code complex procedures, causing your facility to lose massive amounts of rightfully earned revenue.',
                 },
             ],
             
-            // How It Works
-            howTitle: 'How It Works',
-            howSubtitle: 'Get started in minutes with our simple, intuitive process',
+            // How It Works / Advantage
+            howTitle: 'The Brains Behind the Engine',
+            howSubtitle: 'SAAEB is not just software; it is a fusion of advanced technology and elite human expertise.',
             
             howSteps: [
                 {
                     number: '01',
-                    title: 'Sign Up in Seconds',
-                    description: 'Create your account with just an email. No credit card required for the 14-day trial.',
+                    title: 'Former Insurance Executives',
+                    description: 'Our core team includes experts who previously wrote the rejection rules inside major insurance companies. We reverse-engineer their logic to ensure your claims pass.',
                 },
                 {
                     number: '02',
-                    title: 'Customize Your Workspace',
-                    description: 'Set up your team, configure preferences, and integrate your favorite tools effortlessly.',
+                    title: 'Clinical Review Board',
+                    description: 'For highly complex cases, our integrated team of medical professionals and master coders provides a human layer of clinical review, building an unshakeable medical justification before submission.',
                 },
                 {
                     number: '03',
-                    title: 'Start Collaborating',
-                    description: 'Invite team members and start working together in real-time with powerful collaboration features.',
+                    title: 'Advanced Technology Engine',
+                    description: 'Our AI-powered system applies CCHI rules and complex insurance logic in real-time, ensuring zero compliance gaps.',
                 },
                 {
                     number: '04',
-                    title: 'Scale with Confidence',
-                    description: 'Grow your business without limits. Our platform scales seamlessly as your needs evolve.',
+                    title: 'Your Claims Pass',
+                    description: 'Your doctor treats ➔ SAAEB audits and applies CCHI rules ➔ Claims are submitted clean and approved.',
                 },
             ],
             
-            // Testimonials
-            testimonialsTitle: 'Loved by Teams Worldwide',
-            testimonialsSubtitle: 'See what our customers have to say about their experience',
+            // Integration Section
+            integrationTitle: 'Zero-Touch Readiness. Flexible Integration.',
+            integrationSubtitle: 'Choose your path to seamless claim auditing',
             
             testimonials: [
                 {
-                    quote: 'NEXORA transformed how our team collaborates. We\'ve seen a 40% increase in productivity since switching.',
-                    author: 'Sarah Johnson',
-                    role: 'CEO, TechStart Inc.',
-                    avatar: 'SJ',
+                    quote: 'Fast-Track Access: Start immediately by providing us with a dedicated Employee User Account on your current HIS system. Zero technical overhead on your IT team.',
+                    author: 'Option 1',
+                    role: 'Fast-Track Access',
+                    avatar: '⚡',
                 },
                 {
-                    quote: 'The best investment we made this year. The ROI was evident within the first month of implementation.',
-                    author: 'Michael Chen',
-                    role: 'CTO, DataFlow Systems',
-                    avatar: 'MC',
+                    quote: 'API Integration: Fully automated, real-time synchronization between your HIS and our engine for a completely hands-free auditing process leading straight to NPHIES.',
+                    author: 'Option 2',
+                    role: 'Full Automation',
+                    avatar: '🔗',
                 },
                 {
-                    quote: 'Intuitive, powerful, and reliable. NEXORA has become an indispensable part of our daily workflow.',
-                    author: 'Emily Rodriguez',
-                    role: 'Product Manager, CloudScale',
-                    avatar: 'ER',
+                    quote: '100% Saudi hosted infrastructure ensures your patient data never leaves the Kingdom. Bank-grade encryption with complete data sovereignty.',
+                    author: 'Security First',
+                    role: 'Local Data Hosting',
+                    avatar: '🔒',
                 },
             ],
             
             // CTA Section
-            ctaFinal: 'Ready to Transform Your Business?',
-            ctaFinalSubtitle: 'Join thousands of teams already using NEXORA to accelerate their growth.',
-            ctaButton: 'Start Your Free Trial',
+            ctaFinal: 'Exclusive Access for Approved Medical Facilities',
+            ctaFinalSubtitle: 'To maintain operational excellence and dedicate our full resources to our current partners, access to SAAEB is granted by evaluation.',
+            ctaButton: 'Submit Access Request',
         },
 
-        // Features Page
+        // Features Page (Security & Compliance)
         features: {
-            title: 'Powerful Features',
-            subtitle: 'Everything you need to succeed',
-            description: 'Our comprehensive suite of features is designed to help you work smarter and faster.',
+            title: 'Enterprise-Grade Security',
+            subtitle: 'Your Patients\' Data is a Red Line',
+            description: 'At SAAEB, data security and regulatory compliance are non-negotiable.',
             features: [
                 {
-                    title: 'Real-Time Collaboration',
-                    description: 'Work together seamlessly with real-time updates and instant notifications.',
+                    title: 'PDPL Compliant',
+                    description: 'Strict adherence to the Saudi Personal Data Protection Law. We process, we protect, and we comply.',
                 },
                 {
-                    title: 'Advanced Security',
-                    description: 'Enterprise-grade security with end-to-end encryption and compliance certifications.',
+                    title: 'Zero Data Retention',
+                    description: 'We are a processing engine, not a storage warehouse. Patient records are automatically purged from our servers immediately after auditing.',
                 },
                 {
-                    title: 'Powerful Analytics',
-                    description: 'Get insights into your data with powerful analytics and reporting tools.',
-                },
-                {
-                    title: 'API Integration',
-                    description: 'Integrate with 100+ tools and services through our extensive API.',
+                    title: 'Bank-Grade Encryption',
+                    description: 'End-to-end AES-256 encryption with 100% data sovereignty, hosted strictly on secure servers within the Kingdom of Saudi Arabia.',
                 },
             ],
         },
 
         // Pricing Page
         pricing: {
-            title: 'Simple, Transparent Pricing',
-            subtitle: 'Choose the plan that works for you',
-            description: 'No hidden fees, no surprise charges. Scale up or down anytime.',
-            popular: 'Popular',
+            title: 'A Results-Driven Business Model',
+            subtitle: 'We win only when you win',
+            description: 'SAAEB operates on a unique success-fee model designed for maximum transparency and alignment with your facility\'s success.',
+            popular: 'Most Popular',
             plans: [
                 {
-                    name: 'Starter',
-                    price: '$29',
-                    period: '/month',
-                    description: 'Perfect for individuals and small teams',
+                    name: 'Success-Fee Model',
+                    price: 'Competitive',
+                    period: '% on successful claims',
+                    description: 'Only pay on claims SAAEB successfully audits, protects, and gets fully paid by insurance',
                     features: [
-                        'Up to 5 team members',
-                        'Basic analytics',
-                        'Email support',
-                        'Core features',
-                    ],
-                },
-                {
-                    name: 'Professional',
-                    price: '$99',
-                    period: '/month',
-                    description: 'For growing teams',
-                    features: [
-                        'Up to 50 team members',
-                        'Advanced analytics',
-                        'Priority support',
-                        'All Starter features',
-                        'Custom integrations',
+                        'Zero setup fees',
+                        'No licensing costs',
+                        'No maintenance contracts',
+                        'No hidden charges',
+                        'Full transparency',
+                        'Direct alignment with your success',
                     ],
                     popular: true,
                 },
-                {
-                    name: 'Enterprise',
-                    price: 'Custom',
-                    period: 'pricing',
-                    description: 'For large organizations',
-                    features: [
-                        'Unlimited team members',
-                        'Custom analytics',
-                        'Dedicated support',
-                        'All Professional features',
-                        'Custom deployment',
-                    ],
-                },
             ],
-            cta: 'Start your free trial',
+            cta: 'Request Access Evaluation',
         },
 
-        // Auth Pages
+        // Auth Pages (Hidden - Invite Only)
         auth: {
             login: {
                 title: 'Welcome back',
