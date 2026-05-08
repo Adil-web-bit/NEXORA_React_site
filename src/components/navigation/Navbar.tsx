@@ -144,29 +144,7 @@ export const Navbar = () => {
                     {/* CTA Buttons */}
                     <div style={{ display: 'flex', gap: theme.spacing[3] }}>
                         <Link
-                            to="/login"
-                            style={{
-                                padding: `${theme.spacing[2]} ${theme.spacing[5]}`,
-                                color: theme.colors.text.primary,
-                                textDecoration: 'none',
-                                fontWeight: theme.typography.fontWeight.medium,
-                                fontSize: theme.typography.fontSize.base,
-                                borderRadius: theme.borderRadius.lg,
-                                transition: `all ${theme.transitions.duration.base}`,
-                                backgroundColor: 'transparent',
-                                border: 'none',
-                            }}
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.backgroundColor = theme.colors.neutral[100];
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.backgroundColor = 'transparent';
-                            }}
-                        >
-                            {t('nav.login')}
-                        </Link>
-                        <Link
-                            to="/signup"
+                            to="/"
                             style={{
                                 padding: `${theme.spacing[2]} ${theme.spacing[5]}`,
                                 background: `linear-gradient(135deg, ${theme.colors.primary[500]} 0%, ${theme.colors.secondary[500]} 100%)`,
@@ -275,22 +253,7 @@ export const Navbar = () => {
                             }}
                         >
                             <Link
-                                to="/login"
-                                style={{
-                                    padding: `${theme.spacing[3]} ${theme.spacing[4]}`,
-                                    color: theme.colors.text.primary,
-                                    textDecoration: 'none',
-                                    fontWeight: theme.typography.fontWeight.medium,
-                                    fontSize: theme.typography.fontSize.base,
-                                    borderRadius: theme.borderRadius.lg,
-                                    border: `2px solid ${theme.colors.neutral[300]}`,
-                                    textAlign: 'center',
-                                }}
-                            >
-                                {t('nav.login')}
-                            </Link>
-                            <Link
-                                to="/signup"
+                                to="/"
                                 style={{
                                     padding: `${theme.spacing[3]} ${theme.spacing[4]}`,
                                     background: `linear-gradient(135deg, ${theme.colors.primary[500]} 0%, ${theme.colors.secondary[500]} 100%)`,
