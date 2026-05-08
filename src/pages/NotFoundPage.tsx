@@ -101,8 +101,8 @@ export const NotFoundPage = () => {
                             lineHeight: 1.6,
                         }}
                     >
-                        The page you're looking for doesn't exist or has been moved.
-                        Let's get you back on track.
+                        The page you're looking for doesn't exist. 
+                        Please return to the home page to continue exploring SAAEB.
                     </p>
 
                     {/* Action Buttons */}
@@ -116,9 +116,6 @@ export const NotFoundPage = () => {
                     >
                         <Button onClick={() => navigate('/')} variant="primary">
                             Go to Home
-                        </Button>
-                        <Button onClick={() => navigate('/dashboard')} variant="outline">
-                            Go to Dashboard
                         </Button>
                     </div>
                 </motion.div>
